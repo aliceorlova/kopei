@@ -1,0 +1,72 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< Allie:lab2Maven >---------------------------
+[INFO] Building lab2Maven 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:tree (default-cli) @ lab2Maven ---
+[INFO] Allie:lab2Maven:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:1.5.9.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:1.5.9.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:1.5.9.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:1.5.9.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:1.5.9.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.1.11:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.1.11:compile
+[INFO] |  |  |  +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  |  \- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- org.springframework:spring-core:jar:4.3.13.RELEASE:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.17:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.9.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.23:compile
+[INFO] |  |  |  \- org.apache.tomcat:tomcat-annotations-api:jar:8.5.23:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.23:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.23:compile
+[INFO] |  +- org.hibernate:hibernate-validator:jar:5.3.6.Final:compile
+[INFO] |  |  +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.1.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.8.10:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0:compile
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.8.10:compile
+[INFO] |  +- org.springframework:spring-web:jar:4.3.13.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-aop:jar:4.3.13.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:4.3.13.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-context:jar:4.3.13.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:4.3.13.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:4.3.13.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.9.RELEASE:compile
+[INFO] |  +- org.apache.tomcat:tomcat-jdbc:jar:8.5.23:compile
+[INFO] |  |  \- org.apache.tomcat:tomcat-juli:jar:8.5.23:compile
+[INFO] |  \- org.springframework:spring-jdbc:jar:4.3.13.RELEASE:compile
+[INFO] |     \- org.springframework:spring-tx:jar:4.3.13.RELEASE:compile
+[INFO] +- javax.xml.bind:jaxb-api:jar:2.3.0:compile
+[INFO] +- javax.persistence:persistence-api:jar:1.0.2:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.9.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-aop:jar:1.5.9.RELEASE:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.8.13:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:5.0.12.Final:compile
+[INFO] |  |  +- org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.21.0-GA:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] |  +- org.hibernate:hibernate-entitymanager:jar:5.0.12.Final:compile
+[INFO] |  +- javax.transaction:javax.transaction-api:jar:1.2:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:1.11.9.RELEASE:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:1.13.9.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-orm:jar:4.3.13.RELEASE:compile
+[INFO] |  |  +- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] |  |  \- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:4.3.13.RELEASE:compile
+[INFO] +- com.microsoft.sqlserver:mssql-jdbc:jar:7.4.1.jre8:test
+[INFO] \- org.springframework.boot:spring-boot-starter-hateoas:jar:1.5.9.RELEASE:compile
+[INFO]    +- org.springframework.hateoas:spring-hateoas:jar:0.23.0.RELEASE:compile
+[INFO]    \- org.springframework.plugin:spring-plugin-core:jar:1.2.0.RELEASE:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.403 s
+[INFO] Finished at: 2019-10-30T19:26:56+02:00
+[INFO] ------------------------------------------------------------------------
