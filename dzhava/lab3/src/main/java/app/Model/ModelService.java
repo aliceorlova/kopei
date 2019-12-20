@@ -31,10 +31,11 @@ public class ModelService implements IService<Model> {
     }
 
     @Override
-    public void Update(Model model) throws SQLException {
+    public Model Update(Model model) throws SQLException {
         Model m = modelRepo.findOne(model.getId());
         m.setModelName(model.getModelName());
         modelRepo.save(m);
+        return m;
     }
 
     @Override

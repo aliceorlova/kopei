@@ -30,10 +30,11 @@ public class CarService implements IService<Car> {
     }
 
     @Override
-    public void Update(Car car) throws SQLException {
+    public Car Update(Car car) throws SQLException {
         Car c = carRepo.findOne(car.getId());
         c.setCarNumber(car.getCarNumber());
         carRepo.save(c);
+        return c;
     }
 
     @Override

@@ -35,11 +35,12 @@ public class UserService implements IService<User> {
     }
 
     @Override
-    public void Update(User user) throws SQLException {
+    public User Update(User user) throws SQLException {
         User u = userRepo.findOne(user.getId());
         u.setFirstName(user.getFirstName());
         u.setLastName(user.getLastName());
         userRepo.save(u);
+        return u;
     }
 
     @Override

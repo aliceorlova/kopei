@@ -40,10 +40,11 @@ public class BookingService implements IService<Booking> {
     }
 
     @Override
-    public void Update(Booking booking) throws SQLException {
+    public Booking Update(Booking booking) throws SQLException {
         Booking b = repo.findOne(booking.getId());
         b.setLengthOfBookingInDays(booking.getLengthOfBookingInDays());
         repo.save(b);
+        return b;
     }
 
     @Override

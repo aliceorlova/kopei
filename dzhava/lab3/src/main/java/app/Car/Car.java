@@ -1,12 +1,15 @@
 package app.Car;
 import app.Model.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Cars", schema = "dbo")
+@CrossOrigin(origins = "http://localhost:3000")
+@Table(name = "Cars")
 public class Car {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "carId")
     private long CarId;
     @Column(name = "carNumber")

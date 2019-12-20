@@ -11,7 +11,8 @@ import java.util.List;
 @Table(name = "Users")
 public class User {
     @Column(name = "userId")
-    @javax.persistence.Id
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long Id;
     @Column(name = "firstName")
     private String firstName;

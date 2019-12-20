@@ -13,6 +13,7 @@ import java.util.Calendar;
 @Table(name = "Bookings")
 public class Booking {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "bookingId", updatable = false, nullable = false)
     private long BookingId;
     @ManyToOne(fetch = FetchType.LAZY)

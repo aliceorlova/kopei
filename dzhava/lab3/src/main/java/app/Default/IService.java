@@ -10,7 +10,7 @@ public interface IService<T> {
 
     void DeleteById(int id) throws SQLException;
 
-    void Update(T item) throws SQLException;
+    T Update(T item) throws SQLException;
 
     List<T> GetAll() throws SQLException;
 

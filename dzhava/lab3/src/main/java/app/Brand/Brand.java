@@ -10,9 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "CarBrands", schema = "dbo")
+@Table(name = "CarBrands")
 public class Brand {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "brandId")
     private long BrandId;
     @Column(name = "brandName")

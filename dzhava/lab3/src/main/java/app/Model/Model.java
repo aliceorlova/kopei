@@ -7,9 +7,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "CarModels", schema = "dbo")
+@Table(name = "CarModels")
 public class Model {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "modelId")
     private long ModelId;
     @Column(name = "modelName")

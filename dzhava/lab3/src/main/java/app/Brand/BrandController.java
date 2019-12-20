@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.sql.SQLException;
 import java.util.List;
 
-
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping(path = "/brands")
 public class BrandController {
@@ -28,5 +28,13 @@ public class BrandController {
     @PostMapping("/")
     Brand Add(@RequestBody Brand brand) throws SQLException {
         return service.Add(brand);
+    }
+    @RequestMapping(path = "/{id}", method = RequestMethod.DELETE)
+    void Delete(@PathVariable int id) throws SQLException {
+         service.DeleteById(id);
+    }
+    @RequestMapping(path = "/{id}", method = RequestMethod.PUT)
+    Brand Update(@RequestBody Brand brand) throws SQLException{
+        return service.Update(brand);
     }
 }

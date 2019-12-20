@@ -15,7 +15,7 @@ public class BrandService implements IService<Brand> {
 
     @Override
     public Brand Add(Brand item) throws SQLException {
-        item.setId(GetAll().size());
+       // item.setId(GetAll().size());
         return brandRepo.save(item);
     }
 
@@ -30,10 +30,11 @@ public class BrandService implements IService<Brand> {
     }
 
     @Override
-    public void Update(Brand item) throws SQLException {
+    public Brand Update(Brand item) throws SQLException {
         Brand b = brandRepo.findOne(item.getId());
         b.setName(item.getName());
         brandRepo.save(b);
+        return b;
     }
 
     @Override
