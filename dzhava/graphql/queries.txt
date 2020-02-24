@@ -1,0 +1,41 @@
+mutation{
+ addCar(model:"A3",brand:"Audi",price:120){
+  id
+ model
+brand
+price
+}
+}
+
+
+mutation{
+ addUser(email:"user@gmail.com",password:"password"){
+  id
+email
+}
+}
+
+
+query{
+ users{
+  email
+  booking{
+    id
+    car{
+      brand
+      model
+    }
+  }
+  }
+}
+
+query{
+  cars{
+    id
+    brand
+    model
+    price
+  }
+}
+
+  

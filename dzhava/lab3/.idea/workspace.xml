@@ -95,11 +95,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,6 +114,7 @@
       <workItem from="1576691121795" duration="3277000" />
       <workItem from="1576695246178" duration="4848000" />
       <workItem from="1576744434867" duration="131000" />
+      <workItem from="1579034208109" duration="150000" />
     </task>
     <servers />
   </component>
